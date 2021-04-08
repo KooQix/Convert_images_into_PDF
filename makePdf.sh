@@ -2,16 +2,16 @@
 
 
 
-##########################################################################
-##									##
-##		Author:		KooQix 					##
-##		Date:           08.04.2021				##
-##									##
-##		Brief: Convert a bunch of pictures into			##
-##			a PDF file, compressed or not			##
-##									##
-##									##
-##########################################################################
+######################################################################
+##																	##
+##				Author:			KooQix 								##
+##				Date:           08.04.2021							##
+##																	##
+##				Brief: Convert a bunch of pictures into				##
+##						a PDF file, compressed or not				##
+##																	##
+##																	##
+######################################################################
 
 
 
@@ -62,7 +62,8 @@ read -p "Compress PDF? [Y/n]	" compress
 #Compression
 if [ "$compress" != n ] 
 then
-	read -p "Type of compression: \n 1 - Highest quality, 2 - Middle quality and 3 - Low quality\nDefault: Middle quality 	" qualityResp
+	echo -e "Type of compression: \n 1 - Highest quality, 2 - Middle quality and 3 - Low quality\nDefault: Middle quality 	"
+	read qualityResp
 	if [ "$qualityResp" == 1 ]
 	then
 		quality="/printer"
