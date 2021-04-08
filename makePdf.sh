@@ -4,7 +4,7 @@
 
 ##########################################################################
 ##									##
-##		Author:			KooQix 				##
+##		Author:		KooQix 					##
 ##		Date:           08.04.2021				##
 ##									##
 ##		Brief: Convert a bunch of pictures into			##
