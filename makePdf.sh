@@ -19,7 +19,7 @@
 
 
 
-###### Excute the script in the directory where there are images to convert. These images will be converted and copied in the directory you're in (where you executed the script)
+###### Excute the script in the directory where the images you want to convert are. These images will be converted inside the directory you're in (where you executed the script)
 
 #no parameter is required
 if [ "$#" -ne 0 ] && [ $1 != --help ]
@@ -35,7 +35,7 @@ then
 fi
 
 
-read -p "Do you want to remove orginal images? [Y/n]	" rep
+read -p "Do you want to remove the original images? [Y/n]	" rep
 
 ##Take spaces into account
 SAVEIFS=$IFS
@@ -87,8 +87,8 @@ mv ${name}.pdf ..
 #remove original images if rep != n
 if [ "$rep" != n ]
 then
-	echo "Removing original pictures.."
-else		#Move the pictures back to the makle directory and remove the temporary directory
+	echo "Removing the original pictures.."
+else		#Move the pictures back to the main directory and remove the temporary directory
 	mv *.png *.jpg ..
 fi
 
