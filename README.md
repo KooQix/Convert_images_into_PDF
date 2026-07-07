@@ -1,3 +1,5 @@
+# Overview
+
 A simple script to convert a bunch of images into a PDF file with the possibility to compress it
 
 You need imagemagick to be installed: "sudo apt-get install imagemagick"
